@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+  
+  --color-moss: #4A5D4E;
+  --color-moss-light: #6A7F6E;
+  --color-leaf: #89A880;
+  --color-leaf-light: #B4CDB0;
+  --color-earth: #8C7B6D;
+  --color-earth-light: #D4C9C1;
+  --color-sky: #A8C6D9;
+  --color-sand: #F4F1EA;
+  --color-sand-light: #FAF9F6;
+  --color-bark: #2D2A26;
+}
+
+body {
+  background-color: var(--color-sand);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+  color: var(--color-bark);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for natural feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-earth-light);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-earth);
+}
