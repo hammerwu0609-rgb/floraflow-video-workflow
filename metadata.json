@@ -1,0 +1,6 @@
+{
+  "name": "FloraFlow Video Workflow",
+  "description": "A Biophilic task and drive manager for AIGC video production teams.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

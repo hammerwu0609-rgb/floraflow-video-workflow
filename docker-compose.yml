@@ -1,0 +1,16 @@
+services:
+  floraflow:
+    build: .
+    container_name: floraflow
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - floraflow-data:/data
+    environment:
+      - PORT=3001
+      - DATA_DIR=/data
+      - MAX_FILE_SIZE_MB=500
+
+volumes:
+  floraflow-data:
